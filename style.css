@@ -82,7 +82,7 @@ body {
 }
 
 img {
-  max-width: 50%;
+  max-width: 100%;
   height: auto;
 }
 @media (max-width: 300px) {
@@ -91,4 +91,13 @@ img {
     font-size: 12px;
   }
   /* Weitere Anpassungen */
+}
+
+.bild-container {
+  padding: 5em;
+}
+@media screen (max-width: 700px;) {
+  .bild-container {
+    padding: 2em;
+  }
 }
