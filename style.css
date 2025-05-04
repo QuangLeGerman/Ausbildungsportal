@@ -1,0 +1,82 @@
+h1 {
+  font-size: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: brown;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+.logo {
+  color: #fff;
+  font-size: 24px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    padding: 10px 20px;
+  }
+}
+.bild-container {
+  display: flex; /* Flexbox aktivieren */
+  gap: 10px; /* Abstand zwischen den Bildern, optional */
+  justify-content: center; /* Optional: zentriert die Bilder horizontal */
+}
+
+.bild {
+  border: 3px solid #000; /* Rahmen um die Bilder, optional */
+  width: 300px; /* Bildgröße anpassen, optional */
+  height: auto; /* Seitenverhältnis beibehalten */
+}
