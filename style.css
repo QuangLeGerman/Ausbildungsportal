@@ -80,3 +80,15 @@ body {
   width: 300px; /* Bildgröße anpassen, optional */
   height: auto; /* Seitenverhältnis beibehalten */
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  /* Styles für Handys */
+  body {
+    font-size: 14px;
+  }
+  /* Weitere Anpassungen */
+}
