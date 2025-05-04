@@ -82,13 +82,13 @@ body {
 }
 
 img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
 }
-@media (max-width: 768px) {
+@media (max-width: 300px) {
   /* Styles für Handys */
   body {
-    font-size: 14px;
+    font-size: 12px;
   }
   /* Weitere Anpassungen */
 }
